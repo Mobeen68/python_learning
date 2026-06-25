@@ -133,4 +133,3 @@ users = [
 ]
 
 print([user['name'] for user in users if user['age'] >= 18])
-

@@ -7,21 +7,21 @@ class Student:
     
 class StudentManager:
     def __init__(self):
-        self.students = []
+        self.students: list[Student] = []
         
     def list_students(self):
         for student in self.students:
             print(student)
     
-    def add_student(self, student):
+    def add_student(self, student: Student):
         self.students.append(student)
         
-    def remove_student(self, name):
+    def remove_student(self, name: str):
         self.students = list(
             filter(lambda student: student.name != name, self.students)
         )
         
-    def find_student(self, name):
+    def find_student(self, name: str):
         print(list(
             filter(lambda student: student.name == name, self.students)
         ))
