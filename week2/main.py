@@ -1,4 +1,7 @@
 from utils import student_utils
+import requests
+
+print(requests.__version__)
 
 try:
     age = int(input("How old are you? "))

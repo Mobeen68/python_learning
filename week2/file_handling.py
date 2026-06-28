@@ -45,3 +45,14 @@ with open("user.json") as file:
     user = json.load(file)
 
 print(user)
+
+## context manager
+class Timer:
+    def __enter__(self):
+        print('Starting...')
+
+    def __exit__(self, exc_type, exc, tb):
+        print('Finished...')
+        
+with Timer():
+    print('Doing Work...')
