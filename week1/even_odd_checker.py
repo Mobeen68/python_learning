@@ -1,6 +1,6 @@
 num = int(input('Enter number to check: '))
 
-def isEven(number):
+def isEven(number: int) -> bool:
     return number % 2 == 0
 
 if num % 2:
